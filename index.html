@@ -12,17 +12,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/6f596a8b33.js" crossorigin="anonymous"></script>
+
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
    
      <title>Proyecto de prueba</title>
 </head>
 
 <body>
      <header>
-        <h1 class="h1-banner">NOMBRE DE LA EMPRESA - BANNER</h1>
-       
-        <nav >
-            
+        
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                <img src="./Images/MARKOVA-LOGO.png" alt="Logo-Markova" width="130" height="24">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="./Images/logoTucci.png" alt="Logo-Tucci" width="130" height="24">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="./Images/logoParuolo.png" alt="Logo-Paruolo" width="130" height="35">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="./Images/logoSofiMartire.png" alt="Logo-Sofi-Martire" width="130" height="24">
+              </a>
+            </li>
+          </ul>
+
+
+
+        <!--<nav >
             <ul class="ul-del-nav">
                 <li>
                  <i class="fa-solid fa-bars"></i>
@@ -37,13 +62,95 @@
                     <a href="/Views/aboutus.html">Sobre nosotros</a>
                 </li>
             </ul>
-        </nav>
+        </nav>-->
     </header>
     
     
     <main class="main">
-        <h2 class="h2">Nuestros productos</h2>
-        <div class="grid-productos">
+        
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./Images/markovaSS23Carousel.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./Images/markovacarouselss23.jpeg" class= "d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./Images/1c2d7e3f-d142-4ded-920b-9a98b6788de3___80f18caf75b088a56dfc16b932dee874.webp" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        <div>  
+        <article class=" article-h4">    
+                <h4>NEW ARRIVALS</h4>
+        </article>
+        </div>
+        <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <a href="">
+                    <img class="imagenProd" src="./Images/Buzo-Cala-Tucci.jpg" alt="imagProd" />
+                </a>
+                <a href=""><p class="textProd">BUZO CALA</p></a>
+              </div>
+              <div class="col">
+                <a href="">
+                    <img class="imagenProd" src="/Images/top-shine-tucci.webp" alt="imagProd" />
+                    <p class="textProd">TOP SHINE</p>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <a href="">
+                    <img class="imagenProd" src="./Images/pantalon-ann-sl-soft-blue-heaven.webp" alt="imagProd" />
+                    <p class="textProd">PANTALON ANN SL SOFT BLUE HEAVEN</p>
+                </a>
+              </div>
+              <div class="col">
+                <a href="">
+                    <img class="imagenProd" src="./Images/Snacks.png" alt="imagProd" />
+                    <p class="textProd"> TEXT</p>
+                </a>
+              </div>
+              <div class="col">
+                <a href="">
+                    <img class="imagenProd" src="./Images/Helados.jpg" alt="imagProd" />
+                    <p class="textProd"> TEXT</p>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                  <a href="">
+                      <img class="imagenProd" src="./Images/Hamburguesas.png" alt="imagProd" />
+                      <p class="textProd"> TEXT</p>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="">
+                      <img class="imagenProd" src="./Images/Ofertas.png" alt="imagProd" />
+                      <p class="textProd">TEXT</p>
+                  </a>
+                </div>
+              </div>
+          </div>-->
+        <!--<div class="grid-productos">
             <div class="grid-prod">
                 <a href="">
                     <img class="imagenProd" src="./Images/Hamburguesas.png" alt="imagProd" />
@@ -80,7 +187,7 @@
                     <p class="textProd"> Meriendas</p>
                 </a>
             </div>
-          </div>
+          </div>-->
         </main>
 
  
@@ -94,6 +201,10 @@
          </section>  
         </article>
     </footer> 
-  
+    <script src="https://kit.fontawesome.com/6f596a8b33.js" crossorigin="anonymous"></script>
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<!--<script src="./javascript/index.js"></script>-->
+
 </body>
 </html>
