@@ -91,6 +91,30 @@
     margin-bottom: 0;
 } 
 
+.form-floating {
+    width: 500px;
+    margin: auto;
+}
+
+.form-floating textarea{
+    height: 200px;
+}
+
+.button {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button_enviar {
+    background-color: #064786;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+}
+
 
 
 
